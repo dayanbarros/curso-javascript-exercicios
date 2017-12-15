@@ -23,14 +23,15 @@ Crie uma função que adicione um valor à variável criada acima, e retorne a s
 Onde VALOR é o novo valor da variável.
 */
 function resultadoVariavel(){
-return umaVariavel = "o valor da variável agora é VALOR. Onde VALOR é o novo valor da variável."
+	umaVariavel = 25;
+	return "O valor da variável agora é " + umaVariavel
 }
 
 // Invoque a função criada acima.
 resultadoVariavel()
 
 // Qual o retorno da função? (Use comentários de bloco).
-/*"o valor da variável agora é VALOR. Onde VALOR é o novo valor da variável."*/
+/*"O valor da variável agora é 25"*/
 
 /*
 Crie uma função com as seguintes características:
