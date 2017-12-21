@@ -64,7 +64,7 @@ Crie um método chamado `nomeCompleto`, que retorne a frase:
 - "Olá! Meu nome é [NOME] [SOBRENOME]!"
 */
 pessoa.nomeCompleto = function(){
-    return 'Olá Meu nome é ' + pessoa.nome + ' ' + pessoa.sobrenome;
+    return 'Olá Meu nome é ' + pessoa.nome + ' ' + pessoa.sobrenome + '!';
 };
 
 /*
@@ -72,7 +72,7 @@ Crie um método chamado `mostrarIdade`, que retorne a frase:
 - "Olá, eu tenho [IDADE] anos!"
 */
 pessoa.mostrarIdade = function(){
-    return 'Olá, eu tenho ' + pessoa.idade + ' anos';
+    return 'Olá, eu tenho ' + pessoa.idade + ' anos!';
 };
 
 /*
@@ -178,8 +178,23 @@ deve conter no retorno da frase acima é "metro" no lugar de "metros".
 método), que será concatenada com a frase de retorno, mostrando a resposta
 correta, de acordo com os dados inseridos no objeto.
 */
-?
+pessoa.apresentacao = function(){
+	var sexo = 'o ';
+	var IdadeAnos = ' anos, ';
+	var PessoaCaminhouQuantosMetros = ' metros!';
 
+    if( pessoa.sexo === 'Feminino' ){
+       var sexo = 'a '
+    }
+	if( pessoa.idade === 1 ){
+        var IdadeAnos = ' ano, ';
+    }
+	if(pessoa.caminhouQuantosMetros === 1){
+       var PessoaCaminhouQuantosMetros = ' metro!';
+    }
+
+	return 'Olá, eu sou ' + sexo + pessoa.nome + ', tenho ' + pessoa.idade + IdadeAnos + pessoa.altura + 'm, meu peso é ' + pessoa.peso + 'kg e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + PessoaCaminhouQuantosMetros;
+}
 // Agora, apresente-se ;)
-?
+pessoa.apresentacao(); //"Olá, eu sou o Dayan, tenho 27 anos, 1.73m, meu peso é 80kg e, só hoje, eu já caminhei 17 metros!"
 ```
