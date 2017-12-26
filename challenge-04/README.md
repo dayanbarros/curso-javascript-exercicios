@@ -9,15 +9,29 @@ para o contrário.
 */
 var isTruthy = function(x){
   return x ? true : false;
-}
+};
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
-?
+isTruthy(false);
+isTruthy(0);
+isTruthy('');
+isTruthy(undefined);
+isTruthy(NaN);
+isTruthy(null);
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
-?
+isTruthy(1);
+isTruthy(true);
+isTruthy('y');
+isTruthy(1.5);
+isTruthy(2);
+isTruthy(3);
+isTruthy(4);
+isTruthy(5);
+isTruthy(6);
+isTruthy(7);
 
 /*
 Declare uma variável chamada `carro`, atribuindo à ela um objeto com as
