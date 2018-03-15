@@ -32,7 +32,13 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     - Se não houver time para a posição passada, deve retornar a mensagem:
     "Não temos a informação do time que está nessa posição."
 */
-// ?
+function showTeamPosition(posicao) {
+    if (posicao < 6) {
+        return 'O time que está em ' + posicao + 'º lugar é o ' + teams[posicao - 1] + '.';
+    } else {
+        return 'Não temos a informação do time que está nessa posição.';
+    }
+}
 
 /*
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
