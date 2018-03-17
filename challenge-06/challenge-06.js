@@ -33,7 +33,7 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     "Não temos a informação do time que está nessa posição."
 */
 function showTeamPosition(posicao) {
-    if (posicao < 6) {
+    if (posicao < 1 || posicao > 6) {
         return 'O time que está em ' + posicao + 'º lugar é o ' + teams[posicao - 1] + '.';
     } else {
         return 'Não temos a informação do time que está nessa posição.';
@@ -56,10 +56,10 @@ repetição "while".
 */
 var counter = 20;
 
-while(counter < 31){
+while(counter <= 30){
     console.log(counter);
 	counter++
-
+}
 /*
 Crie uma função chamada `convertToHex`, com as seguintes características:
     - A função recebe uma cor por parâmetro, do tipo string. Exemplo: "red";
@@ -72,7 +72,22 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
     a frase:
     "Não temos o equivalente hexadecimal para [COR]."
 */
-// ?
+switch(color) {
+       case 'red':
+          return 'O hexadecimal para a cor ' + [COR] + ' é ' + [HEXADECIMAL] + '.';
+       break;
+       case 'blue':
+        break;
+       case 'green':
+        break;
+        case 'black':
+        break;     
+        case 'white':
+        break;     
+        default:
+        return 'Não temos o equivalente hexadecimal para ' + cor + '.'
+       
+}
 
 /*
 Tente mostrar o hexadecimal de 8 cores diferentes usando a função criada acima.
