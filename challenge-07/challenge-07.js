@@ -1,26 +1,31 @@
 /*
 Crie um array com 5 items (tipos variados).
 */
-// ?
+var arr = [15, {dayan: 'objeto'}, [1,2,3], 'Dayan o Melhor', null];
 
 /*
 Crie uma função chamada `addItem`, que irá adicionar itens no array criado.
 A função deverá retornar o array atualizado.
 */
-// ?
+function addItem(arr){
+    return arr
+}
+
+addItem(arr);
 
 /*
 Adicione um novo array ao array criado no início do desafio, com ao menos 3
 itens de tipos diferentes, mostrando o resultado no console.
 */
-// ?
+var arr2 = ['Novo arr', true, {melhor: 'é isso ai'}];
+console.log(arr2)
 
 /*
 Mostre no console o segundo elemento desse último array, criado acima, com a
 frase:
 "O segundo elemento do segundo array é [ELEMENTO]."
 */
-// ?
+console.log('O segundo elemento do segundo array é '+ arr2[1] +'.')
 
 /*
 Mostre no console quantos itens tem o primeiro array criado, com a frase:
